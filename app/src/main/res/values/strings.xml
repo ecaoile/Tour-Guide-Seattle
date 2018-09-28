@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Tour Guide Seattle</string>
+    <string name="sample_attr_name">Space Needle</string>
+    <string name="sample_attr_desc">Iconic, 605-ft.-tall spire at the Seattle Center,
+        with an observation deck &amp; a rotating restaurant.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_structures">Structures</string>
 </resources>
