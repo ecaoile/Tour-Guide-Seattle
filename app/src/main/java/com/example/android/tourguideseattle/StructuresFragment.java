@@ -15,14 +15,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link StructuresFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link StructuresFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class StructuresFragment extends Fragment {
 
 
@@ -34,12 +26,20 @@ public class StructuresFragment extends Fragment {
 
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
         attractions.add(new Attraction("Space Needle", "Iconic, 605-ft.-tall spire at the Seattle" +
-                " Center, with an observation deck & a rotating restaurant."));
+                " Center, with an observation deck & a rotating restaurant.", R.drawable.space_needle));
         attractions.add(new Attraction("Pike Place Market", "Pike Place Market is" +
                 " a public market overlooking the Elliott Bay waterfront in Seattle, Washington," +
-                " United States. " +
-                "The Market opened August 17, 1907, and is one of the oldest continuously operated" +
-                " public farmers' markets in the United States."));
+                " United States.", R.drawable.pike_place_market));
+        attractions.add(new Attraction("Chihuly Garden and Glass", "Chihuly Garden " +
+                "and Glass is an exhibit in the Seattle Center showcasing the studio glass of Dale" +
+                " Chihuly.", R.drawable.chihuly_garden));
+        attractions.add(new Attraction("Museum of Pop Culture", "The Museum of" +
+                " Pop Culture, or MoPOP is a nonprofit museum dedicated to contemporary popular" +
+                " culture.", R.drawable.museum_of_pop));
+        attractions.add(new Attraction("Seattle Center", "Seattle Center is an" +
+                " arts, educational, tourism and entertainment center in Seattle, Washington," +
+                " United States.", R.drawable.seattle_center));
+
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), attractions, R.color.category_structures);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);

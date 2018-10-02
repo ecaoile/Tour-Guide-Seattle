@@ -27,7 +27,7 @@
     <color name="category_structures">#FD8E09</color>
 
     <!-- Background color for the family members category -->
-    <color name="category_parks">#379237</color>
+    <color name="category_outdoor">#379237</color>
 
     <!-- Background color for the colors category -->
     <color name="category_restaurants">#8800A0</color>
