@@ -32,23 +32,13 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
         Attraction currentAttraction = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.attraction_text_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
         nameTextView.setText(currentAttraction.getName());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
         TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
         descriptionTextView.setText(currentAttraction.getDescription());
-
-        // Return the whole list item layout (containing 2 TextViews and an ImageView)
-        // so that it can be shown in the ListView
 
         ImageView imageView = (ImageView)listItemView.findViewById(R.id.image);
 
