@@ -1,6 +1,9 @@
 <resources>
+    <string name="hello_blank_fragment">Hello World</string>
+
     <string name="app_name">Tour Guide Seattle</string>
     <!-- Popular Tourist Attractions (Buildings/Structures) -->
+    <string name="category_structures">Popular</string>
     <string name="space_needle_name">Space Needle</string>
     <string name="space_needle_info">Iconic, 605-ft.-tall spire at the Seattle
         Center, with an observation deck and a rotating restaurant.</string>
@@ -18,6 +21,7 @@
         entertainment center in Seattle, Washington, United States.</string>
 
     <!-- Outdoor Tourist Attractions -->
+    <string name="category_outdoor">Outdoor</string>
     <string name="kerry_park_name">Kerry Park</string>
     <string name="kerry_park_info">Kerry Park is a 1.26-acre park on the south slope of Queen
         Anne Hill, located at the corner of Second Avenue West and West Highland Drive.</string>
@@ -33,6 +37,7 @@
         January 20, 2007."</string>
 
     <!-- Restaurants -->
+    <string name="category_restaurants">Restaurant</string>
     <string name="citizen_name">Citizen</string>
     <string name="citizen_info">Brick-walled cafe serving Reubens, crêpes, salads and such
         accompanied by coffee drinks or even wine.</string>
@@ -46,9 +51,26 @@
     <string name="barolo_info">Sparkling chandeliers and gauzy drapes set the sophisticated mood
         at this upscale Italian restaurant.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="category_structures">Popular</string>
-    <string name="category_outdoor">Outdoor</string>
-    <string name="category_restaurants">Restaurant</string>
+    <!-- Events -->
+    <string name="category_events">Events</string>
+    <string name="chinese_new_year_name">Chinese New Year\'s Celebration and Dragon Dance</string>
+    <string name="chinese_new_year_info">Early in February, the Wu Hsing Tao School celebrates
+        Chinese New Year with an open house for prospective students interested in healing
+        through Five Element Acupuncture, featuring caligraphy demonstrations, a Dragon Dance
+        by Master Mak, and more. Call (206) 324-7188 for more information.</string>
+    <string name="cheese_festival_name">Seattle Cheese Festival</string>
+    <string name="cheese_festival_info">In mid to late May, Pike Place Market hosts local and
+        international cheese makers and a selection of over 250 cheeses, cooking demonstrations,
+        a wine garden, a cheese maze for the kids, and 'cheese fest best' dishes are served at
+        selected local restaurants. Call (202) 285-6100 for more information.</string>
+    <string name="microbrew_festival_name">Washington Summer Microbrew Festival</string>
+    <string name="microbrew_festival_info">    On Father’s Day weekend at St. Edwards State Park,
+        festival-goers enjoy plenty of suds and food, band music, a keg toss and more, including
+        a root beer garden for kids.</string>
+    <string name="salmon_festival_name">Issaquah Salmon Days Festival</string>
+    <string name="salmon_festival_info">Celebration of salmon returning to area lakes,
+        streams and the downtown hatchery draws crowds of more than 150,000 during the
+        first full weekend in October. Featured are more than 300 artists, Foods of the
+        World, a Grande Parade, 5k/10k runs, four stages of live entertainment, and more.
+        Call (425) 392-0661 for more information.</string>
 </resources>
