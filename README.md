@@ -11,7 +11,7 @@ The following is required to run the program.
 3. A working emulator or Android phone to use the app
 
 ## Visual
-![tour guide](tour-guide-SS1.png)
+![tour guide](https://github.com/ecaoile/Tour-Guide-Seattle/blob/master/tour-guide-ss1.png)
 
 ## Happy Path
  - open application in Android Studio
