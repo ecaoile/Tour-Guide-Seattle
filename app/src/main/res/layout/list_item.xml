@@ -33,7 +33,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:id="@+id/attraction_text_view"
-            tools:text="@string/sample_attr_name"/>
+            tools:text="@string/space_needle_name"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -45,7 +45,7 @@
             android:maxLines="10"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="@string/sample_attr_desc"/>
+            tools:text="@string/space_needle_info"/>
     </RelativeLayout>
 
 </RelativeLayout>

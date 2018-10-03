@@ -33,9 +33,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0)
             return new StructuresFragment();
-        else
+        else if (position == 1)
             return new OutdoorFragment();
-
+        else
+            return new RestaurantFragment();
     }
 
     /**
@@ -43,14 +44,16 @@ public class CategoryAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0)
             return mContext.getString(R.string.category_structures);
-        else
+        else if (position == 1)
             return mContext.getString(R.string.category_outdoor);
+        else
+            return mContext.getString(R.string.category_restaurants);
     }
 }

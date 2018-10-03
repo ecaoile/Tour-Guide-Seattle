@@ -25,22 +25,19 @@ public class StructuresFragment extends Fragment {
 
 
         final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
-        attractions.add(new Attraction("Space Needle", "Iconic, 605-ft.-tall spire at the Seattle" +
-                " Center, with an observation deck & a rotating restaurant.", R.drawable.space_needle));
-        attractions.add(new Attraction("Pike Place Market", "Pike Place Market is" +
-                " a public market overlooking the Elliott Bay waterfront in Seattle, Washington," +
-                " United States.", R.drawable.pike_place_market));
-        attractions.add(new Attraction("Chihuly Garden and Glass", "Chihuly Garden " +
-                "and Glass is an exhibit in the Seattle Center showcasing the studio glass of Dale" +
-                " Chihuly.", R.drawable.chihuly_garden));
-        attractions.add(new Attraction("Museum of Pop Culture", "The Museum of" +
-                " Pop Culture, or MoPOP is a nonprofit museum dedicated to contemporary popular" +
-                " culture.", R.drawable.museum_of_pop));
-        attractions.add(new Attraction("Seattle Center", "Seattle Center is an" +
-                " arts, educational, tourism and entertainment center in Seattle, Washington," +
-                " United States.", R.drawable.seattle_center));
+        attractions.add(new Attraction(getString(R.string.space_needle_name),
+                getString(R.string.space_needle_info), R.drawable.space_needle));
+        attractions.add(new Attraction(getString(R.string.pike_place_market_name),
+                getString(R.string.pike_place_market_info), R.drawable.pike_place_market));
+        attractions.add(new Attraction(getString(R.string.chihuly_name),
+                getString(R.string.chihuly_info), R.drawable.chihuly_garden));
+        attractions.add(new Attraction(getString(R.string.mopop_name),
+                getString(R.string.mopop_info), R.drawable.museum_of_pop));
+        attractions.add(new Attraction(getString(R.string.seattle_center_name),
+                getString(R.string.seattle_center_info), R.drawable.seattle_center));
 
-        AttractionAdapter adapter = new AttractionAdapter(getActivity(), attractions, R.color.category_structures);
+        AttractionAdapter adapter = new AttractionAdapter(getActivity(), attractions,
+                R.color.category_structures);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
