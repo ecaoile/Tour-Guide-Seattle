@@ -26,21 +26,20 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        if(convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
         Attraction currentAttraction = getItem(position);
 
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.attraction_text_view);
+        TextView nameTextView = (TextView) convertView.findViewById(R.id.attraction_text_view);
         nameTextView.setText(currentAttraction.getName());
 
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
+        TextView descriptionTextView = (TextView) convertView.findViewById(R.id.default_text_view);
         descriptionTextView.setText(currentAttraction.getDescription());
 
-        ImageView imageView = (ImageView)listItemView.findViewById(R.id.image);
+        ImageView imageView = (ImageView)convertView.findViewById(R.id.image);
 
 
         if (currentAttraction.hasImage()) {
@@ -51,10 +50,10 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
             imageView.setVisibility(View.GONE);
         }
 
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View textContainer = convertView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         textContainer.setBackgroundColor(color);
 
-        return listItemView;
+        return convertView;
     }
 }
